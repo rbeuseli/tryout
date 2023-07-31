@@ -6,6 +6,8 @@ echo "# tryout" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
+# the following command (suggested by github) was not actually needed because my
+# default branch was already called main due to the setting in my .gitconfig
 git branch -M main
 git remote add origin git@github.com:rbeuseli/tryout.git
 git push -u origin main
