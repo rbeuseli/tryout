@@ -1,0 +1,11 @@
+# the following commands were used to create a local repository and upload the
+# contents to the empty repository I had just created on github.
+# This works using my ssh public key that I upload previously to github.
+#
+echo "# tryout" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:rbeuseli/tryout.git
+git push -u origin main
